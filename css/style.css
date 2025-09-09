@@ -1,0 +1,53 @@
+/*1.RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*box sizing define o padrão dentro da caixa de elementos*/
+}
+
+/*2.ESTILOS GERAIS PARA A PÁGINA*/
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4fffe;
+    color: #333;
+    display: flex; /*Definindo a centralização de todo o layout dentro do conteúdo*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*3. ESTILOS DO CARD DE RECEITA*/
+.recipe-card {
+    width: 350px; /*largura fixa para o card*/
+    background-color: #ffffff; 
+    border-radius: 15px; /*Arredondamento de cantos visuais*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /*Sombreamento da borda sutil*/
+    overflow: hidden;
+}
+
+
+.recipe-imagem {
+    width: 100%;
+    display: block; /*Garante que o navegador renderize a imagem em um bloco, removendo pequenos espaços que podem aparecer na abaixo da tela.*/
+}
+
+/*4. ESTILOS PARA O CONTEÚDO DE TEXTO*/
+.recipe-conteudo {
+    padding: 25px; /*Definindo o espaçamento de dentro da caixa*/
+}
+
+.recipe-titulo {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    font-size: 1rem; /*16px*/
+    line-height: 1.5; /*Espaçamento entre as linhas do paragrafo*/
+    color: #666;
+    margin-bottom: 0; /*remove a margem de baixo do ultimo elemento*/
+}
